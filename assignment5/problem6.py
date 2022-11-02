@@ -1,9 +1,9 @@
 import numpy as np
 
-def computeL1Loss(u : np.array, v : np.array):
+def computeL1Loss(u : np.array, v : np.array) -> np.array:
     return np.sum(np.abs(u-v))
 
-def computeL2Loss(u : np.array, v : np.array):
+def computeL2Loss(u : np.array, v : np.array) -> np.array:
     return np.sum(np.dot(u-v, u-v))
 
 v1 = np.random.rand(5)
