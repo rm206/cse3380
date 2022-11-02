@@ -4,7 +4,7 @@ def computeL1Loss(u : np.array, v : np.array) -> np.array:
     return np.sum(np.abs(u-v))
 
 def computeL2Loss(u : np.array, v : np.array) -> np.array:
-    return np.sum(np.dot(u-v, u-v))
+    return np.sum(np.dot(u-v, (u-v).T))
 
 v1 = np.random.rand(5)
 v2 = np.random.rand(5)
