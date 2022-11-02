@@ -1,4 +1,3 @@
-from lib2to3.pgen2.pgen import generate_grammar
 import numpy as np
 from scipy.spatial import distance
 import matplotlib.pyplot as plt
